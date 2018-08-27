@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UI Challenge 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>UI Challenge - Custom Form Elements</h1>
+
+    <form>
+        <span class="input-type">text input</span>
+        <input type="text" name="textbox" placeholder="placeholder text">
+        <span class="input-type">text input w/ validation error</span>
+        <input type="text" name="textbox2" placeholder="placeholder text">
+        <span class="input-type">select box</span>
+            <div class="dropdown">
+                <input type="text" class="dropbtn" placeholder="please select an option...">
+                <datalist class="dropdown-content">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                </datalist>
+            </div> 
+        <span class="input-type">select box - open</span>
+            <div class="dropdown">
+                <input type="text" class="dropbtn" placeholder="please select an option...">
+                <datalist class="dropdown-content-2">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                </datalist>
+            </div> 
+        <span class="input-type">checkbox</span>
+            <div class="container">
+                <div class="unchecked"></div>
+                <div class="checked"></div>
+            </div>
+        <span class="input-type">radio</span>
+            <div class="container">
+                <div class="unradioed"></div>
+                <div class="radioed"></div>
+            </div>
+        <span class="input-type">buttons</span>
+            <button>submit</button>
+            <button class="button-2">submit</button>
+    </form>
+  </body>
+</html>
