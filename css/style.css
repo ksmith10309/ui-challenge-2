@@ -7,20 +7,21 @@ body {
     max-width: 600px;
     margin: 0 auto;
     border: 1px solid black;
-    padding: 40px 50px;
+    padding: 40px 55px;
 }
 
 h1 {
     text-align: center;
     text-decoration: underline;
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 .input-type {
-
     display: block;
     margin: 50px 0 10px 0;
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 input {
@@ -31,7 +32,11 @@ input {
 }
 
 form {
-    margin-top: 100px;
+    margin-top: 200px;
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-content {
@@ -49,10 +54,6 @@ option {
     background-color: rgb(155,155,155);
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown-content-2 option:nth-child(even){
     background-color: rgb(155,155,155);
 }
@@ -61,6 +62,33 @@ option {
     display: block;
     background-color: rgb(216,216,216);
     border-right: 1px solid lightgrey;
+}
+
+.triangle {
+    position: absolute;
+    left: 425px;
+    top: -14px;
+	width: 77px;
+    height: 77px;
+    transform: scale(0.20);
+}
+
+.down {
+    background: url('../sprite/form-elements-sprite.png') no-repeat -1143px -280px;
+}
+
+.up {
+    background: url('../sprite/form-elements-sprite.png') no-repeat -1035px -280px;
+}
+
+.triangle2 {
+    position: absolute;
+    left: 425px;
+    top: -14px;
+	background: url('../sprite/form-elements-sprite.png') no-repeat -1035px -280px;
+	width: 77px;
+    height: 77px;
+    transform: scale(0.20);
 }
 
 .container {
@@ -80,7 +108,7 @@ option {
     transform: scale(0.35);
 }
 
-.unchecked:hover {
+.checkClick {
     background: url('../sprite/form-elements-sprite.png') no-repeat -381px -239px;
 }
 
@@ -107,7 +135,7 @@ option {
     transform: scale(0.35);
 }
 
-.unradioed:hover {
+.radioClick {
     background: url('../sprite/form-elements-sprite.png') no-repeat -812px -242px;
 }
 
@@ -122,15 +150,18 @@ option {
     transform: scale(0.35);
 }
 
-button { 
+button {
+    margin-top: 10px;
     height: 50px;
     width: 150px;
     font-size: 1.2em;
     background-color: rgb(216,216,216);
+    color: black;
     margin-right: 20px;
+    outline: none;
 }
 
-button:hover {
+.buttonClick {
     background-color: rgb(74,74,74);
     color: white;
 }
@@ -138,4 +169,11 @@ button:hover {
 .button-2 {
     background-color: rgb(74,74,74);
     color: white;
+}
+
+#error {
+    color: red;
+    float: right;
+    margin-top: 10px;
+    display: none;
 }
